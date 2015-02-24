@@ -4,7 +4,13 @@ header {
     text-align:center;
     padding:5px; 
 	font-size:40px;
+	width:100%;
 }
+aside
+	{
+	float: right;
+		min-width:15%;
+	}
 nav {
     
     background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#CCC));/*Para chrome y Safari*/
@@ -13,7 +19,7 @@ nav {
     background-image: linear-gradient(top, #FFF, #CCC);/*El estandar por defecto*/
     overflow:hidden;
     padding:10px;
-    width:950px;
+    width:100%;
 }
 nav ul{
 list-style:none;
@@ -43,7 +49,7 @@ nav ul li a{
     transition: 0.4s linear all;
 }
 section {
-    width:350px;
+    width:60%;
     float:left;
     padding:10px;
 margin-left:5%;	
@@ -53,34 +59,11 @@ margin-left:5%;
         display: none;
     }
 }
-
-@media screen and (max-width: 240px)
+@media screen and (max-width: 560px)
 {
-	nav 
+aside
 	{
-		height:100%;
-		width:100%;
-	}
-	
-	header
-	{
-		height:100%;
-		width:100%;
-	}
-	article
-	{
-		height:100%;
-		width:100%;
-	}	
-	aside
-	{
-		height:100%;
-		width:100%;
-	}
-	
-	footer
-	{
-		height:100%;
+		float: left;
 		width:100%;
 	}
 }
@@ -89,35 +72,34 @@ margin-left:5%;
 {
 	nav 
 	{
-		height:100%;
+
 		width:100%;
 	}
 	
 	header
 	{
-		height:100%;
+
 		width:100%;
 	}
 	article
 	{
-		height:100%;
+
 		width:100%;
 	}	
 	section
 	{
-		height:100%;
+
 		width:100%;
 	}
 	
 	aside
 	{
-		height:100%;
+		float: left;
 		width:100%;
 	}
 	
 	footer
 	{
-		height:100%;
 		width:100%;
 	}	
 }
