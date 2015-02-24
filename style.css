@@ -22,6 +22,75 @@ section {
         display: none;
     }
 }
+
+@media screen and (max-width: 240px)
+{
+	nav 
+	{
+		height:100%;
+		width:100%;
+	}
+	
+	header
+	{
+		height:100%;
+		width:100%;
+	}
+	article
+	{
+		height:100%;
+		width:100%;
+	}	
+	aside
+	{
+		height:100%;
+		width:100%;
+	}
+	
+	footer
+	{
+		height:100%;
+		width:100%;
+	}
+}
+
+@media screen and (max-width: 320px)
+{
+	nav 
+	{
+		height:100%;
+		width:100%;
+	}
+	
+	header
+	{
+		height:100%;
+		width:100%;
+	}
+	article
+	{
+		height:100%;
+		width:100%;
+	}	
+	section
+	{
+		height:100%;
+		width:100%;
+	}
+	
+	aside
+	{
+		height:100%;
+		width:100%;
+	}
+	
+	footer
+	{
+		height:100%;
+		width:100%;
+	}	
+}
+
 footer {
     background-color:black;
     color:white;
