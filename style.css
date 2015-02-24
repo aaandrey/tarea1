@@ -3,14 +3,30 @@ header {
     color:white;
     text-align:center;
     padding:5px; 
+	font-size:40px;
 }
-nav {
-    line-height:30px;
-    background-color:#eeeeee;
-    height:300px;
-    width:100px;
+body{
+    background:#0000;
+}
+nav{
+    
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#CCC));/*Para chrome y Safari*/
+     overflow:hidden;
+    padding:10px;
+    width:950px;
+}
+nav ul{
+    list-style:none;
+    margin:0 10px 0 10px;
+    padding:0;
+}
+nav ul li{
     float:left;
-    padding:5px; 
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:16px;
+    font-weight:bold;
+    margin-right:10px;
+    text-align:center;
 }
 section {
     width:350px;
@@ -23,4 +39,7 @@ footer {
     clear:both;
     text-align:center;
     padding:5px; 
+}
+aside ul{
+text-align:left;
 }
