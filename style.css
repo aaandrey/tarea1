@@ -5,41 +5,127 @@ header {
     padding:5px; 
 	font-size:40px;
 }
-body{
-    background:#0000;
-}
-nav{
+nav {
     
     background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#CCC));/*Para chrome y Safari*/
-     overflow:hidden;
+    background-image: -moz-linear-gradient(top center, #FFF, #CCC);/*Para Firefox*/
+    background-image: -o-linear-gradient(top, #FFF, #CCC);/*Para Opera*/
+    background-image: linear-gradient(top, #FFF, #CCC);/*El estandar por defecto*/
+    overflow:hidden;
     padding:10px;
     width:950px;
 }
 nav ul{
-    list-style:none;
-    margin:0 10px 0 10px;
-    padding:0;
+list-style:none;
+margin: 0 10px 0 10px;
+padding:0;
+
 }
 nav ul li{
+    
     float:left;
     font-family:Arial, Helvetica, sans-serif;
     font-size:16px;
     font-weight:bold;
     margin-right:10px;
     text-align:center;
+
+}
+nav ul li a{
+    color:#999;
+    display:block;
+    padding:10px;
+    text-decoration:none;
+    /*Transiciones*/
+    -webkit-transition: 0.4s linear all;
+    -moz-transition: 0.4s linear all;
+    -o-transition: 0.4s linear all;
+    transition: 0.4s linear all;
 }
 section {
     width:350px;
     float:left;
-    padding:10px; 
+    padding:10px;
+margin-left:5%;	
 }
+@media print {
+    header,footer,nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 240px)
+{
+	nav 
+	{
+		height:100%;
+		width:100%;
+	}
+	
+	header
+	{
+		height:100%;
+		width:100%;
+	}
+	article
+	{
+		height:100%;
+		width:100%;
+	}	
+	aside
+	{
+		height:100%;
+		width:100%;
+	}
+	
+	footer
+	{
+		height:100%;
+		width:100%;
+	}
+}
+
+@media screen and (max-width: 320px)
+{
+	nav 
+	{
+		height:100%;
+		width:100%;
+	}
+	
+	header
+	{
+		height:100%;
+		width:100%;
+	}
+	article
+	{
+		height:100%;
+		width:100%;
+	}	
+	section
+	{
+		height:100%;
+		width:100%;
+	}
+	
+	aside
+	{
+		height:100%;
+		width:100%;
+	}
+	
+	footer
+	{
+		height:100%;
+		width:100%;
+	}	
+}
+
 footer {
     background-color:black;
     color:white;
     clear:both;
     text-align:center;
     padding:5px; 
-}
-aside ul{
-text-align:left;
 }
